@@ -1,5 +1,10 @@
 <?php
 
+/* Cette fonction permet d'exporter la table users d'une base de données
+de type postgresql
+$fichier => est le nom du fichier qu'on souhaite donné
+ */
+
 function import_users_pgsql( $fichier ){
 	$host = 'mon-host_pgsql';
 	$user = 'user-bdd_pgsql';
@@ -16,5 +21,6 @@ END_CMD;
 
 shell_exec($cmd);
 }
+
 
 ?>
